@@ -1,0 +1,2 @@
+Letakkan foto barang katalog di folder ini (contoh: gamis-sage.jpg),
+lalu daftarkan di file katalog.js. Panduan: CARA-MENAMBAH-KATALOG.txt

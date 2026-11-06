@@ -1,0 +1,40 @@
+CARA MENAMBAH BARANG DI KATALOG ZYANARA
+========================================
+
+Yang perlu diubah hanya dua hal: folder  img/katalog/  dan file  katalog.js.
+File lain (index.html dan seterusnya) tidak perlu disentuh.
+
+1. SIAPKAN FOTO
+   - Foto tegak (portrait) paling cocok, misalnya rasio 4:5.
+   - Kecilkan ukurannya, lebar sekitar 1000 piksel atau ukuran file di bawah 300 KB,
+     supaya website tetap cepat dibuka di HP.
+   - Beri nama file tanpa spasi dan huruf kecil semua, contoh:
+     gamis-sage.jpg, mukena-katun-putih.jpg
+
+2. UPLOAD FOTO
+   Buka File Manager di hosting (Hostinger / IDwebhost), masuk ke
+   public_html/img/katalog/  lalu upload fotonya.
+
+3. DAFTARKAN DI katalog.js
+   Buka public_html/katalog.js dengan editor di File Manager.
+   Salin satu baris barang, tempel di dalam daftar, lalu ganti isinya. Contoh:
+
+   { foto: "img/katalog/gamis-sage.jpg", nama: "Gamis Sage", kategori: "Dewasa wanita", harga: "Rp185.000", ket: "Ukuran M–XL, bahan katun rayon", label: "Baru", contoh: false },
+
+   Hal yang sering bikin error:
+   - Setiap baris diakhiri tanda koma.
+   - Teks selalu diapit tanda kutip dua " ... ".
+   - Penulisan kategori harus persis salah satu dari:
+     Pakaian anak, Pakaian remaja, Dewasa wanita, Dewasa pria,
+     Mukena, Kerudung, Sprei, Handuk
+
+4. HAPUS BARANG CONTOH
+   Setelah barang asli diisi, hapus baris-baris yang berisi  contoh: true
+
+5. SIMPAN DAN CEK
+   Buka website, lalu tekan Ctrl+F5 (atau tarik layar ke bawah di HP)
+   supaya browser memuat versi terbaru.
+   Kalau katalog tiba-tiba kosong atau muncul tulisan "Katalog belum termuat",
+   biasanya ada koma atau tanda kutip yang hilang di katalog.js.
+
+Barang yang sudah habis: hapus barisnya, atau tambahkan  label: "Habis".
